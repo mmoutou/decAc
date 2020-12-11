@@ -5,6 +5,7 @@ remove(list=ls())
 bigreload = 0;   # Whether to reload the big RData file uch_Jan17on.RData with 
                  # AllD18 but also work so far etc.
 repartitiondata = 0  # redo the data partion - GENERALLY KEEP AT ZERO UNLESS V. THOROUGHLY BACKED UP!!
+                     # ... and ... NO FISHING !
 redotraintest = 0;   # If we are to re-prepare the train/test data.
 repreprocbsl =0;     # If we want to redo the baseline preprocessing.
 repreprocfu1 =0;     # If we want to redo stability preprocessing.
@@ -20,7 +21,7 @@ switch(Sys.info()[['sysname']],
          try(setwd('~/R/R4hal/scripts/'));                                  # if Hal home functions.
          try(setwd("/media/sf_mmpsy/Dropbox/FIL_aux/R_scripts"))},          # G7 ubuntu VM  
        Windows= {try(setwd('D:/mmoutou/Dropbox/FIL_aux/R_scripts/'));       #  Cedric Windoze
-         try(setwd('/media/sf_mmpsy/Dropbox/FIL_aux/R_scripts/'))}       #  Dell G7 ubuntu VM
+         try(setwd('C:/Users/mmpsy/Dropbox/FIL_aux/R_scripts/'))}           #  Dell G7 ubuntu VM
 ) ;
 source('dirs4r.R');
 wherearewe <- dirs4r();  # provides paths for main R scripts, a home dir, and optionally for LD work.
@@ -892,7 +893,7 @@ save(Dall.Train, nSall, nocfitall,
      Dall.Test, hdIncr, 
      allcfa1,allcfa2,allcfa3,allcfa4, FAsemAll,
      fa4decAcAll,fa4decAcAl6,
-     file=paste(wherearewe$uchjan17on,'decAc4_train-test_02.RData',sep='')
+     file=paste(wherearewe$uchjan17on,'decAc4_train-test_working.RData',sep='')
 )
 
 # } # end of dummy function DECFA18
