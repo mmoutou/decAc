@@ -11,7 +11,7 @@ repreprocbsl =0;     # If we want to redo the baseline preprocessing.
 repreprocfu1 =0;     # If we want to redo stability preprocessing.
 repreprocfu2 =0;     # If we want to redo main follow-up preprocessing.
 redefinemissing = 0; # Redo various structures with missing pts. Benjamin communicated.
-save2disk = 0;       # Only save if things worked ...
+save2disk = 0;       # Only save if things worked ... 
 
 print('IGNORE \'cannot change working directory\' errors below (switch statement) unless further crash later:',quote='F')
 switch(Sys.info()[['sysname']],
