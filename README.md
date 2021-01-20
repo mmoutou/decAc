@@ -3,7 +3,8 @@ Decision Acuity work for Moutoussis - Garzon et al.
 
 Data files:
 
-AllD18.RData has all decision-making measures that were transformed and factor-analyzed.
+AllD18.RData has all decision-making measures that were transformed and factor-analyzed, (variable AllD18) and also a convenient index to column headers ( variable hd18 )
+AllD18.csv contains the same data but in csv format.
 
 symfacdeciq.csv includes symptom and disposition factor scores, decision acuity scores, demographic variables and IQ scores needed for linear mixed effects longitudinal analyses.
 
